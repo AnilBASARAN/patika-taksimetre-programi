@@ -10,7 +10,7 @@ public class Taksimetre {
         Scanner input = new Scanner(System.in);
         double kmCarpani = 2.20;
         System.out.println("Mesafe Giriniz(KM cinsinden) :");
-        int mesafe = input.nextInt();
+        double mesafe = input.nextDouble();
 
         double ucret = (10 + (mesafe * kmCarpani)) < 20 ? 20 : (10 + (mesafe * kmCarpani));
          ucret = Math.round(ucret);
